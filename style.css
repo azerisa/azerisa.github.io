@@ -1,6 +1,9 @@
 .jumbotron {
   padding-top: 5rem;
-  background-color: #e7dac9;
+  background-image: url(img/wp\ one\ direction.jpg);
+  background-size: cover;
+  background-position: center;
+  background-position-y: top;
 }
 
 #projects {
