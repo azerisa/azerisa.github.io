@@ -12,17 +12,16 @@ $item = new Users($db);
 $data = json_decode(file_get_contents("php://input"));
 $item->id = $data->id;
 
-    // User values
-    $item->full_name = $data->full_name;
-    $item->email = $data->email;
-    $item->password = $data->password;
-    $item->photo = $data->photo;
-    $item->job = $data->job;
-    $item->expected_position = $data->expected_position;
+// User values
+$item->full_name = $data->full_name;
+$item->email = $data->email;
+$item->password = $data->password;
+$item->photo = $data->photo;
+$item->job = $data->job;
+$item->expected_position = $data->expected_position;
 
-if($item->updateUser()){
-echo json_encode("User data updated.");
-} else{
-echo json_encode("Data could not be updated");
+if ($item->updateUser()) {
+    echo json_encode("User data updated.");
+} else {
+    echo json_encode("Data could not be updated");
 }
-?>
