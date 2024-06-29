@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!isset($_SESSION['user'])) {
-    return header('Location: http://localhost:81/konterku/views/login/' );
-}
+// session_start();
+// if (!isset($_SESSION['user'])) {
+//     return header('Location: http://localhost:81/konterku/views/login/' );
+// }
 ?>
 <!doctype html>
 <html lang="en">
@@ -61,7 +61,7 @@ if (!isset($_SESSION['user'])) {
                             <div class="mb-3">
                                 <label class="form-label">Full Name</label>
                                 <input type="text" name="full_name" id="full_name" class="form-control" />
-                                <span id="fullname_error" class="text-danger"></span>
+                                <span id="full_name_error" class="text-danger"></span>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
@@ -71,22 +71,22 @@ if (!isset($_SESSION['user'])) {
                             <div class="mb-3">
                                 <label class="form-label">Password</label>
                                     <input type="password" name="password" id="password" class="form-control" />
-                                    <span id="pass_error" class="text-danger"></span>
+                                    <span id="password_error" class="text-danger"></span>
                                 </div>
-                                <div class="mb-3">
+                            <div class="mb-3">
                                 <label class="form-label">Job</label>
                                 <input type="text" name="job" id="job" class="form-control" />
-                                <span id="fullname_error" class="text-danger"></span>
+                                <span id="job_error" class="text-danger"></span>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Expected Position</label>
                                 <input type="text" name="expected_position" id="expected_position" class="form-control" />
-                                <span id="fullname_error" class="text-danger"></span>
+                                <span id="expected_position_error" class="text-danger"></span>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Photo</label>
-                                <input type="text" name="Photo" id="Photo" class="form-control" />
-                                <span id="fullname_error" class="text-danger"></span>
+                                <input type="text" name="photo" id="photo" class="form-control" />
+                                <span id="photo_error" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -107,7 +107,7 @@ if (!isset($_SESSION['user'])) {
         showAll();
 
         $('#add_data').click(function(){
-            $('#dynamic_modal_title').text('Add Data User');
+            $('#dynamic_modal_title').text('Add Biodata User');
             $('#sample_form')[0].reset();
             $('#action').val('Add');
             $('#action_button').text('Add');
@@ -128,7 +128,7 @@ if (!isset($_SESSION['user'])) {
                 }
 
                 $.ajax({
-                    url:"http://localhost:81/konterku/api/user/create.php",
+                    url:"http://localhost//portofolio-asep/si-admin/api/users/create.php",
                     method:"POST",
                     data: JSON.stringify(formData),
                     success:function(data){
@@ -145,14 +145,16 @@ if (!isset($_SESSION['user'])) {
             }else if($('#action').val() == "Update"){
                 var formData = {
                     'id' : $('#id').val(),
-                    'fullname' : $('#fullname').val(),
+                    'full_name' : $('#full_name').val(),
                     'email' : $('#email').val(),
-                    'pass' : $('#pass').val(),
-                    'roles' : $('#roles').val()
+                    'password' : $('#password').val(),
+                    'job' : $('#job').val(),
+                    'expected_position' : $('#expected_position').val(),
+                    'photo' : $('#photo').val()
                 }
 
                 $.ajax({
-                    url:"http://localhost:81/konterku/api/user/update.php",
+                    url:"http://localhost//portofolio-asep/si-admin/api/users/update.php",
                     method:"PUT",
                     data: JSON.stringify(formData),
                     success:function(data){
@@ -174,17 +176,17 @@ if (!isset($_SESSION['user'])) {
         $.ajax({
             type: "GET",
             contentType: "application/json",
-            url:"http://localhost:81/konterku/api/user/read.php",
+            url:"http://localhost/portofolio-asep/si-admin/api/users/read.php",
             success: function(response) {
             // console.log(response);
                 var json = response.body;
                 var dataSet=[];
                 for (var i = 0; i < json.length; i++) {
                     var sub_array = {
-                        'fullname' : json[i].fullname,
+                        'full_name' : json[i].full_name,
                         'email' : json[i].email,
-                        'roles' : json[i].roles,
-                        'created' : json[i].created,
+                        'job' : json[i].job,
+                        'expected_position' : json[i].expected_position,
                         'action' : '<button onclick="showOne('+json[i].id+')" class="btn btn-sm btn-warning">Edit</button>'+
                         '<button onclick="deleteOne('+json[i].id+')" class="btn btn-sm btn-danger">Delete</button>'
                     };
@@ -193,10 +195,10 @@ if (!isset($_SESSION['user'])) {
                 $('#sample_data').DataTable({
                     data: dataSet,
                     columns : [
-                        { data : "fullname" },
+                        { data : "full_name" },
                         { data : "email" },
-                        { data : "roles" },
-                        { data : "created" },
+                        { data : "job" },
+                        { data : "expected_position" },
                         { data : "action" }
                     ]
                 });
@@ -219,7 +221,7 @@ if (!isset($_SESSION['user'])) {
             type: "GET",
             contentType: "application/json",
             url:
-            "http://localhost:81/konterku/api/user/read.php?id="+id,
+            "http://localhost//portofolio-asep/si-admin/api/users/read.php?id="+id,
             success: function(response) {
                 $('#id').val(response.id);
                 $('#fullname').val(response.fullname);
@@ -235,7 +237,7 @@ if (!isset($_SESSION['user'])) {
     function deleteOne(id) {
         alert('Yakin untuk hapus data ?');
         $.ajax({
-            url:"http://localhost:81/konterku/api/user/delete.php",
+            url:"http://localhost//portofolio-asep/si-admin/api/users/delete.php",
             method:"DELETE",
             data: JSON.stringify({"id" : id}),
             success:function(data){
