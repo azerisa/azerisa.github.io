@@ -224,9 +224,12 @@
             "http://localhost//portofolio-asep/si-admin/api/users/read.php?id="+id,
             success: function(response) {
                 $('#id').val(response.id);
-                $('#fullname').val(response.fullname);
+                $('#full_name').val(response.full_name);
                 $('#email').val(response.email);
-                $('#roles').val(response.roles).change();
+                $('#password').val(response.password);
+                $('#job').val(response.job);
+                $('#expected_position').val(response.expected_position);
+                $('#photo').val(response.photo).change();
             },
             error: function(err) {
                 console.log(err);

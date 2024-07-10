@@ -47,7 +47,7 @@
                     data: JSON.stringify(formData),
                     success: function(data) {
                         $('#action_button').attr('disabled', false);
-                        window.location.href = 'http://localhost/portofolio-asep/';
+                        window.location.href = 'http://localhost/portofolio-asep/views/users/';
 
                     },
                     error: function(err) {
