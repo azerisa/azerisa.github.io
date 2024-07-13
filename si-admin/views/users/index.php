@@ -128,7 +128,7 @@
                 }
 
                 $.ajax({
-                    url:"http://localhost//portofolio-asep/si-admin/api/users/create.php",
+                    url:"https://asepisa07.amisbudi.cloud/portofolio-asep/si-admin/api/users/create.php",
                     method:"POST",
                     data: JSON.stringify(formData),
                     success:function(data){
@@ -154,7 +154,7 @@
                 }
 
                 $.ajax({
-                    url:"http://localhost//portofolio-asep/si-admin/api/users/update.php",
+                    url:"https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/users/update.php",
                     method:"PUT",
                     data: JSON.stringify(formData),
                     success:function(data){
@@ -176,7 +176,7 @@
         $.ajax({
             type: "GET",
             contentType: "application/json",
-            url:"http://localhost/portofolio-asep/si-admin/api/users/read.php",
+            url:"https://asepisa07.amisbudi.cloud/portofolio-asep/si-admin/api/users/read.php",
             success: function(response) {
             // console.log(response);
                 var json = response.body;
@@ -221,7 +221,7 @@
             type: "GET",
             contentType: "application/json",
             url:
-            "http://localhost//portofolio-asep/si-admin/api/users/read.php?id="+id,
+            "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/users/read.php?id="+id,
             success: function(response) {
                 $('#id').val(response.id);
                 $('#full_name').val(response.full_name);
@@ -240,7 +240,7 @@
     function deleteOne(id) {
         alert('Yakin untuk hapus data ?');
         $.ajax({
-            url:"http://localhost//portofolio-asep/si-admin/api/users/delete.php",
+            url:"https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/users/delete.php",
             method:"DELETE",
             data: JSON.stringify({"id" : id}),
             success:function(data){

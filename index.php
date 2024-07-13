@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top" style="background-color: #24150b88">
       <div class="container-fluid">
-        <a class="navbar-brand text-light fw-bold" href="#">One Direction</a>
+        <a class="navbar-brand text-light fw-bold" href="#">Asep Isa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,10 +44,10 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/one-direction.jpg" alt="One Direction" width="300" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4 text-light fw-bold">One Direction</h1>
-      <p class="lead text-light fw-bold">Grup Vokal Inggris-Irlandia.</p>
+    <section class="jumbotron text-center" style="background-image: url(img/wp\ bg.jpg);">
+      <img src="img/profile.jpeg" alt="Asep Isa" width="300" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4 text-light fw-bold">Asep Isa</h1>
+      <p class="lead text-light fw-bold">Web Desainer | Programmer.</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -63,22 +63,19 @@
       <div class="container">
         <div class="row text-center mb-3 fw-bold">
           <div class="col wow fadeInUp" data-wow-delay="0.5s">
-            <h2>About Our Band</h2>
+            <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center text-center">
           <div class="col-md">
             <p>
-              One Direction adalah sebuah grup vokal Inggris-Irlandia berbasis di London, terdiri dari Niall Horan, Liam Payne, Harry Styles, Louis Tomlinson, dan, sampai keluarnya Zayn Malik tahun 2015 dari grup ini. Mereka dikontrak oleh
-              kontrak rekaman Simon Cowell Syco Records setelah terbentuk dan selesai di posisi ketiga di musim ketujuh dari kompetisi menyanyi televisi Inggris The X Factor pada tahun 2010. Mendapatkan sukses internasional melalui media
-              sosial, lima album One Direction, Up All Night (2011), Take Me Home (2012), Midnight Memories (2013), Four (2014), dan Made in the A.M. (2015), memuncaki pasar di banyak negara, dan menghasilkan single hit termasuk "What Makes
-              You Beautiful", "Live While We're Young", "Best Song Ever", "Story of My Life" dan "Drag Me Down".
+            Perkenalkan Saya Asep Isa Saepul Akbar Saya lahir di Ciamis pada 24 September 2003. Tempat tinggal di Cilogaang.
+            kota Cikoneng Jawa Barat. Sekarang Saya kuliah di Universitas Galuh Ciamis jurusan Sistem Informasi dan selama di jurusan Sistem Informasi Saya mampu menguasai dasar pembuatan website,
+            selain belajar tentang website di Sistem Informasi juga mempelajari cara pembuatan aplikasi desktop dan bahasa pemograman yang sudah dipelajari adalah HTML, CSS, dan PHP.
             </p>
           </div>
           <div class="col-md">
-            Penghargaan mereka termasuk enam Brit Awards, empat MTV Video Music Awards, sebelas MTV Europe Music Awards, tujuh American Music Awards (termasuk kategori Artist of the Year pada tahun 2014 dan 2015), dan 28 Teen Choice Awards.
-            One Direction menghasilkan $50 juta tahun 2012 dan dinobatkan menjadi "Top New Artist" oleh Billboard tahun 2012. International Federation of the Phonographic Industry (IFPI) menjadikan mereka Global Recording Artist of 2013.
-            Pada tahun 2015, Forbes menempatkan mereka di posisi empat selebritas dengan pendapatan tertinggi di dunia, dan kedua pada tahun 2016.
+            Motivasi saya adalah "Teruslah berjuang, jangan pernah menunggu apapun itu. Sebab, kamu tidak akan pernah menemui waktu yang tepat dalam berusaha."
           </div>
         </div>
       </div>
@@ -97,31 +94,23 @@
       <div class="container">
         <div class="row text-center mb-3 fw-bold">
           <div class="colwow fadeInUp" data-wow-delay="0.5s">
-            <h2>Live Concert Documentation</h2>
+            <h2>Documentation About Me</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
+              <img src="img/projects/1.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
-                <a class="btn btn-dark py-3 px-5 mt-3 text-light" href="https://tv.apple.com/gb/movie/one-direction-where-we-are---the-concert-film/umc.cmc.5jprgjs4q8hy554ftba11jzyw?l=it">Read More</a>
+                <p class="card-text">Website One Direction</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
+              <img src="img/projects/2.png" class="card-img-top" alt="Project 2" />
               <div class="card-body">
-                <a class="btn btn-dark py-3 px-5 mt-3 text-light" href="https://bluesand-pampuliina.blogspot.com/2015/03/foto-konser-one-direction-di-jakarta.html">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
-              <div class="card-body">
-                <a class="btn btn-dark py-3 px-5 mt-3 text-light" href="https://popcrush.com/one-direction-2013-concerts/">Read More</a>
+                <p class="card-text">Desain Website Bocchi The Rock</p>
               </div>
             </div>
           </div>
@@ -252,7 +241,7 @@
 
     <!-- Footer -->
     <footer class="text-center p-3 fw-bold" style="background-color: rgba(143, 85, 46, 0.534)">
-      <p>Kunjungi Instagram Kami <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/onedirection?igsh=eWptdHdzejNuYWFp text-light" class="text-dark">One Direction</a></p>
+      <p>Kunjungi Instagram Saya <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/asepisa24?igsh=NnJycXBsMWtiOHB2 text-light" class="text-dark">Asep Isa</a></p>
     </footer>
     <!-- Akhir Footer -->
     
@@ -281,7 +270,7 @@
             };
 
             $.ajax({
-              url: "http://localhost//portofolio-asep/si-admin/api/skills/create.php",
+              url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/create.php",
               method: "POST",
               data: JSON.stringify(formData),
               success: function (data) {
@@ -305,7 +294,7 @@
             };
 
             $.ajax({
-              url: "http://localhost//portofolio-asep/si-admin/api/skills/update.php",
+              url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/update.php",
               method: "PUT",
               data: JSON.stringify(formData),
               success: function (data) {
@@ -327,7 +316,7 @@
         $.ajax({
           type: "GET",
           contentType: "application/json",
-          url: "http://localhost//portofolio-asep/si-admin/api/skills/read.php",
+          url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/read.php",
           success: function (response) {
             // console.log(response);
             var json = response.body;
@@ -380,7 +369,7 @@
         $.ajax({
           type: "GET",
           contentType: "application/json",
-          url: "http://localhost//portofolio-asep/si-admin/api/skills/read.php?id=" + id,
+          url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/read.php?id=" + id,
           success: function (response) {
             $("#id").val(response.id);
             $("#user_id").val(response.user_id);
@@ -398,7 +387,7 @@
         var konfirmasiUser = confirm("Yakin untuk hapus data ?");
         if (konfirmasiUser) {
           $.ajax({
-            url: "http://localhost//portofolio-asep/si-admin/api/skills/delete.php",
+            url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/delete.php",
             method: "DELETE",
             data: JSON.stringify({
               id: id,

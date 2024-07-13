@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse fs-5" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/portofolio-asep/index.php">Home Page</a>
+                        <a class="nav-link" href="https://asepisa07.amisbudi.cloud/portofolio-asep/">Home Page</a>
                     </li>
                 </ul>
             </div>
@@ -139,7 +139,7 @@
                     }
 
                     $.ajax({
-                        url: "http://localhost//portofolio-asep/si-admin/api/skills/create.php",
+                        url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/create.php",
                         method: "POST",
                         data: JSON.stringify(formData),
                         success: function(data) {
@@ -163,7 +163,7 @@
                     }
 
                     $.ajax({
-                        url: "http://localhost//portofolio-asep/si-admin/api/skills/update.php",
+                        url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/update.php",
                         method: "PUT",
                         data: JSON.stringify(formData),
                         success: function(data) {
@@ -187,7 +187,7 @@
             $.ajax({
                 type: "GET",
                 contentType: "application/json",
-                url: "http://localhost//portofolio-asep/si-admin/api/skills/read.php",
+                url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/read.php",
                 success: function(response) {
                     // console.log(response);
                     var json = response.body;
@@ -240,7 +240,7 @@
             $.ajax({
                 type: "GET",
                 contentType: "application/json",
-                url: "http://localhost//portofolio-asep/si-admin/api/skills/read.php?id=2" + id,
+                url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/read.php?id=2" + id,
                 success: function(response) {
                     $('#id').val(response.id);
                     $('#user_id').val(response.user_id);
@@ -258,7 +258,7 @@
         function deleteOne(id) {
             alert('Yakin untuk hapus data ?');
             $.ajax({
-                url: "http://localhost//portofolio-asep/si-admin/api/skills/delete.php",
+                url: "https://asepisa07.amisbudi.cloud//portofolio-asep/si-admin/api/skills/delete.php",
                 method: "DELETE",
                 data: JSON.stringify({
                     "id": id
